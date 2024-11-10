@@ -1,0 +1,619 @@
+.container {
+    max-width: 1250px;
+    margin-inline: auto;
+    padding-inline: 15px;
+
+}
+
+body {
+    /* background-color: #6A52FF; */
+    background-color: #6A52FF;
+}
+
+* {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff !important;
+}
+
+/* header */
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+    max-height: 100px;
+}
+
+.logo {
+    max-width: fit-content;
+}
+
+.logo__text {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 20px;
+    list-style: none
+}
+
+a {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+a:hover {
+    transform: translateY(-5px);
+}
+
+/* main */
+h1 {
+    max-width: fit-content;
+    text-shadow: #000 24px 0 7px;
+}
+
+.main {
+    padding-block: 50px;
+}
+
+.section {
+    margin-top: 100px
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: fit-content;
+}
+
+.list-wrapper {
+    max-width: 40%;
+}
+
+.wrapper-container {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: circle;
+}
+
+.call-to-action {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employeer-section .section__title {
+    text-align: center;
+}
+
+.employeer-section .list-wrapper {
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.title-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-list {
+    padding-left: 0;
+}
+
+.title-list__item {
+    padding-left: 15px;
+}
+
+.title-list__item ul {
+    padding-left: 15px;
+}
+
+.title-list__item ul li {
+    padding-left: 15px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+details {
+    background-color: #6A52FF;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 1s ease;
+    /* Увеличили время анимации */
+}
+
+details[open] {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+    transition: color 1s ease;
+    /* Увеличили время анимации */
+}
+
+summary::before {
+    content: '+';
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    transition: transform 1s ease;
+    /* Увеличили время анимации */
+}
+
+details[open] summary::before {
+    transform: rotate(45deg);
+}
+
+details p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 1s ease, transform 1s ease;
+    /* Увеличили время анимации */
+}
+
+details[open] p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* footer*/
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: flex-start;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+form button {
+    color: #000 !important;
+    display: block;
+    min-width: 100px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+input {
+    min-width: 200px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+
+.soc1al__links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bg-icon {
+    max-width: 100px;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-icon:first-child {
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-icon:nth-child(2) {
+    top: 25%;
+    left: 25%;
+}
+
+.bg-icon:nth-child(3) {
+    top: 75%;
+    left: 75%;
+}
+
+.bg-icon:nth-child(4) {
+    top: 172%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-icon:nth-child(5) {
+    top: 220%;
+    left: 70%;
+}
+
+.bg-icon:nth-child(6) {
+    top: 150%;
+    left: 75%;
+}
+
+.bg-icon:nth-child(7) {
+    top: 250%;
+    left: 90%;
+}
+
+.bg-icon:nth-child(8) {
+    top: 200%;
+    left: 10%;
+}
+
+/* header */
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+    max-height: 100px;
+    /* animation: fadeInDown 1.5s ease-in-out; */
+    animation-delay: 0.5s;
+}
+
+.logo {
+    max-width: fit-content;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    animation: slideInRight 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+a {
+    display: inline-block;
+    transition: 0.5s;
+    animation: pulse 1.5s infinite;
+    /* Постоянный пульсирующий эффект */
+}
+
+a:hover {
+    transform: translateY(-5px);
+    color: #ffd700;
+    /* Золотистый эффект при наведении */
+}
+
+/* main section */
+.section__title {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: fit-content;
+    animation: scaleUp 2s ease-in-out;
+    animation-delay: 1s;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), 0px 0px 20px rgba(255, 215, 0, 0.5);
+}
+
+.section__description {
+    animation: fadeIn 2s ease-in-out;
+    animation-delay: 1.5s;
+}
+
+.work-list__item,
+.title-list__item {
+    animation: slideInLeft 2.5s ease-in-out;
+    animation-delay: 1s;
+}
+
+.call-to-action {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1.5s infinite;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+.splide__slide img {
+    animation: fadeIn 2.5s ease-in-out, scaleUp 2.5s ease-in-out;
+    transform: scale(0.9);
+}
+
+.splide__slide img:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s ease-in-out;
+}
+
+/* footer */
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: flex-start;
+    /* animation: fadeInUp 2s ease-in-out; */
+    animation-delay: 2s;
+}
+
+input,
+button {
+    transition: box-shadow 0.5s ease-in-out;
+    /* animation: floatButton 3s infinite ease-in-out; */
+}
+
+input:hover,
+button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Background icons animation */
+.bg-icon {
+    animation: iconFloat 8s ease-in-out infinite;
+    transition: transform 0.5s ease-in-out;
+    animation-delay: 2s;
+}
+
+.bg-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+/* Параллакс-эффект */
+.parallax-bg {
+    background-position: center;
+    background-size: cover;
+    animation: parallaxMove 15s infinite linear;
+}
+
+@keyframes parallaxMove {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Animations */
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* @keyframes floatButton {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+} */
+
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Анимация плавного появления с небольшим смещением вверх */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Применение анимации ко всем основным секциям */
+.section,
+.header,
+.footer,
+.faq-container details,
+.splide__slide,
+.list-wrapper {
+    opacity: 0; /* Изначально скрыты */
+    animation: fadeInUp 1s ease-out forwards; /* Анимация на 1 секунду */
+}
+
+/* Задержка для плавного появления */
+.header {
+    animation-delay: 0.2s;
+}
+.section {
+    animation-delay: 0.4s;
+}
+.splide__slide {
+    animation-delay: 0.6s;
+}
+.faq-container details {
+    animation-delay: 0.8s;
+}
+.footer {
+    animation-delay: 1s;
+}
+
+/* Анимация легкого покачивания для иконок и изображений */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bg-icon,
+.soc1al__links img {
+    animation: float 3s ease-in-out infinite; /* Постоянное покачивание */
+}
+
+/* Плавное изменение прозрачности на наведение */
+.navigation__link:hover,
+.work-list__item:hover,
+.title-list__item:hover,
+.cost__item:hover,
+.dlc__item:hover,
+.faq-container summary:hover {
+    transition: color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7; /* Плавное изменение прозрачности */
+    color: #007BFF; /* Лёгкое изменение цвета при наведении */
+}
+
+/* Лёгкое качание заголовков */
+@keyframes sway {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.section__title,
+h2.list-title {
+    animation: sway 4s ease-in-out infinite; /* Постепенное качание заголовков */
+}
+
+/* Анимация легкого масштабирования для кнопки при наведении */
+button:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+/* Медленное изменение прозрачности фона для footer */
+.footer {
+}
+
+@keyframes fade {
+    0% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
+
+/* Стили для формы в футере */
+footer form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px auto; /* Центрирование формы */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Лёгкий фон для контраста */
+    border-radius: 8px;
+}
+
+footer form input,
+footer form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+footer form input:focus {
+    border-color: #007BFF; /* Подсветка поля при фокусе */
+    outline: none;
+}
+
+footer form button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+footer form button:hover {
+    background-color: #0056b3; /* Потемнение на наведение */
+}
+
+/* Дополнительно: центрируем форму на маленьких экранах */
+@media (max-width: 600px) {
+    footer form {
+        width: 90%;
+    }
+}
+
+button:hover {
+    transform: none;
+}

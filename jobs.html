@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакансии</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+    <script src="script/filter.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="imgs/logo.svg" alt="">
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="index.html" class="navigation__link">Главная</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Вакансии</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#employeer" class="navigation__link">Работодателям</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#faq" class="navigation__link">Полезная информация</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#footer" class="navigation__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <img class="bg-icon" src="imgs/free-icon-business-916411.png" alt="">
+        <img class="bg-icon" src="imgs/free-icon-money-2769280.png" alt="">
+        <img class="bg-icon" src="imgs/free-icon-people-3633274.png" alt="">
+        <img class="bg-icon" src="imgs/free-icon-work-time-3671952.png" alt="">
+        <img class="bg-icon" src="imgs/free-icon-cheer-6454533.png" alt="">
+        <img class="bg-icon" src="imgs/free-icon-computer-14567979.png" alt="">
+        <img class="bg-icon" src="imgs/free-icon-it-support-10418076.png" alt="">
+        <img class="bg-icon" src="imgs/free-icon-it-support-7390795.png" alt="">
+        <section class="section">
+            <h1 class="section__title">Вакансии</h1>
+            <div class="container">
+                
+
+                <aside class="aside">
+                    <div class="aside__container filter">
+                        <div class="filter__group">
+                            <div class="filter__label">
+                                <label>График работы</label>
+                            </div>
+                            <div class="filter__input">
+                                <div class="input__wrapper">
+                                    <input class="input" type="checkbox" id="5/2">
+                                    <label for="">5/2</label>
+                                </div>
+
+                                <div class="input__wrapper">
+                                    <input class="input" type="checkbox" id="2/2">
+                                    <label for="">2/2</label>
+                                </div>
+
+                                <div class="input__wrapper">
+                                    <input class="input" type="checkbox" id="3/1">
+                                    <label for="">3/1</label>
+                                </div>
+
+                                <div class="input__wrapper">
+                                    <input class="input" type="checkbox" id="6/1">
+                                    <label for="">6/1</label>
+                                </div>
+
+                                <div class="input__wrapper">
+                                    <input class="input" type="checkbox" id="1/1">
+                                    <label for="">1/1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__group">
+                            <div class="filter__label">
+                                <label>Возраст</label>
+                            </div>
+                            <div class="filter__input">
+
+                                <div class="input__wrapper">
+                                    <input class="input" type="checkbox" id="14">
+                                    <label for="">14</label>
+                                </div>
+
+                                <div class="input__wrapper">
+                                    <input class="input" type="checkbox" id="12">
+                                    <label for="">12</label>
+                                </div>
+
+                                <div class="input__wrapper">
+                                    <input class="input" type="checkbox" id="16">
+                                    <label for="">16</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="button button-apply">Применить</button>
+                    </div>
+                </aside>
+                <div class="jobs">
+                    <div class="job-card">
+                        <h2 class="job-card__title">Консультант</h2>
+                        <div class="job-card__text-wrapper">
+                            <div class="job-card__text">
+                                <p>Набираем консультантов без опыта, от 14 лет.</p>
+                            </div>
+                        </div>
+                        <button class="job-card__btn">Откликнуться</button>
+                    </div>
+                    <div class="job-card">
+                        <h2 class="job-card__title">Аниматор</h2>
+                        <div class="job-card__text-wrapper">
+                            <div class="job-card__text">
+                                <p>Требуется аниматор без опыта, от 16 лет, работа с детьми. График 2/2</p>
+                            </div>
+                        </div>
+                        <button class="job-card__btn">Откликнуться</button>
+                    </div>
+                    <div class="job-card">
+                        <h2 class="job-card__title">Оператор</h2>
+                        <div class="job-card__text-wrapper">
+                            <div class="job-card__text">
+                                <p>Нужен оператор в колл-центр. График 5/2 От 14 лет. </p>
+                            </div>
+                        </div>
+                        <button class="job-card__btn">Откликнуться</button>
+                    </div>
+
+                    <div class="job-card">
+                        <h2 class="job-card__title">Волонтер</h2>
+                        <div class="job-card__text-wrapper">
+                            <div class="job-card__text">
+                                <p>Идет срочный набор волонтеров для работ по городу, от 12 лет. График 2/2</p>
+                            </div>
+                        </div>
+                        <button class="job-card__btn">Откликнуться</button>
+                    </div>
+
+                    <div class="job-card">
+                        <h2 class="job-card__title">Помощник аниматора</h2>
+                        <div class="job-card__text-wrapper">
+                            <div class="job-card__text">
+                                <p>Помогать аниматору с реквизитом, от 12 лет. График 1/1</p>
+                            </div>
+                        </div>
+                        <button class="job-card__btn">Откликнуться</button>
+                    </div>
+
+                    <div class="job-card">
+                        <h2 class="job-card__title">Продавец</h2>
+                        <div class="job-card__text-wrapper">
+                            <div class="job-card__text">
+                                <p>Набираем продавцов в магазин без опыта, от 16 лет. График 3/1</p>
+                            </div>
+                        </div>
+                        <button class="job-card__btn">Откликнуться</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2024 kidJobs.</p>
+
+            <form action="">
+                <input type="text" placeholder="Введите ваше имя">
+                <input type="text" placeholder="Введите ваш возраст">
+                <input type="text" placeholder="Введите ваш номер">
+                <input type="text" placeholder="Cообщение">
+                <button>Отправить</button>
+            </form>
+
+            <div class="soc1al__links">
+                <a href="#"><img src="imgs/icons8-vk-50.svg" alt=""></a>
+                <a href="#"><img src="imgs/icons8-telegram.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
